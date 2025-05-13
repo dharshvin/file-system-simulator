@@ -1,0 +1,145 @@
+body {
+    background-color: #1a1a1a;
+  color: #e0e0e0;
+  
+    font-family: 'Fira Code', 'Menlo', 'Monaco', 'Consolas', monospace;
+  
+    margin: 0;
+  padding: 20px;
+  padding-bottom: 80px;   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+  max-width: 900px;
+  background: #2b2b2b;
+  
+    border: 1px solid #444;
+  border-radius: 8px;
+  
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+h1 {
+    color: #00e676; 
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #b0b0b0;   font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#terminal {
+    background: #000000;
+  
+    padding: 15px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  height: 450px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+#terminal::-webkit-scrollbar {
+  width: 10px;
+}
+#terminal::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+#terminal::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+#terminal::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+#terminal-output {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  flex-grow: 1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #f0f0f0; }
+
+#input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#prompt {
+    color: #00e676;
+  font-weight: bold;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+#command-input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+    border: none;
+  box-shadow: none;
+  
+    background: transparent;
+  
+    color: #f0f0f0; 
+  
+  font-family: inherit;   font-size: 0.9rem;
+}
+
+#command-input:focus {
+    outline: none;
+}
+
+
+footer {
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #1a1a1a;   border-top: 1px solid #444;
+  padding: 10px 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #b0b0b0;
+}
+
+footer a {
+  color: #00e676;   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+  filter: invert(1); }

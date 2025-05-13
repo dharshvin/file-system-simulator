@@ -1,7 +1,7 @@
 # SQLite File System Simulator
 
-A simple, command-line file system simulator written in Python. It uses an SQLite database to create a persistent file system.
-All files, directories, and their contents are stored in a database table.
+A simple, web based file system simulator written in Python, that can run in the browser. Uses an SQLite database to create a tree structure file system. 
+All folders and files are stored in a database table
 
 ##  Commands
 
@@ -34,6 +34,9 @@ All files, directories, and their contents are stored in a database table.
     Removes a file or directory from the current directory.
 
       * If you remove a directory, all its contents and children will be recursively deleted.
+
+  * `pwd`
+    Prints the full path of the current working directory.
 
   * `exit`
     Quits the file system simulator.
