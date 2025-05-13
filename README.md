@@ -1,7 +1,7 @@
 # SQLite File System Simulator
 
 A simple, web based file system simulator written in Python, that can run in the browser. Uses an SQLite database to create a tree structure file system. 
-All folders and files are stored in a database table
+All folders and files are stored in a database table.
 
 ##  Commands
 
