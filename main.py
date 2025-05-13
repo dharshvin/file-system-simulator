@@ -320,7 +320,7 @@ def handle_keypress(event):
 
 def main_setup():
     initialize_database()
-    print_to_terminal("Welcome to the File System Simulator!")
+    print_to_terminal("Welcome!")
     print_to_terminal("Commands: 'ls', 'mkdir', 'cd', 'touch', 'cat', 'write', 'rm', 'pwd', 'exit'.") 
 
     prompt_el = document.querySelector("#prompt")
