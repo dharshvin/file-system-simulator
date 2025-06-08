@@ -56,13 +56,16 @@ def initialize_database():
         con.commit()
     print_to_terminal(f"'{DB_NAME}' initialized.")
 
+# Resolves a path string to a node. Returns (id, type, parent_id, name) or (None, 'nonexistent', parent_id, name)
 def resolve_path_to_node(current_dir_id, path_str):
-    """
-    Resolves a path string to a node.
-    Returns (id, type, parent_id, name) or (None, 'nonexistent', parent_id, name)
-    """
     if not path_str:
         return (current_dir_id, 'directory', None, None) 
+
+    # ~ functionality that points to the root directory for now
+    if path_str == '~':
+        path_str = '/'
+    elif path_str.startswith('~/'):
+        path_str = '/' + path_str[2:]
 
     with sqlite3.connect(DB_NAME) as con:
         cur = con.cursor()
