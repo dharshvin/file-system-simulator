@@ -38,5 +38,8 @@ All folders and files are stored in a database table.
   * `pwd`
     Prints the full path of the current working directory.
 
+  * `help <command>`
+    Prints a list of commands or shows detailed usage for a specific command.
+
   * `exit`
     Quits the file system simulator.
