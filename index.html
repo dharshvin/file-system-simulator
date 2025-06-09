@@ -1,62 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>File System Simulator Terminal</title>
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&gt;_</text></svg>">
-    
-    <link
-      rel="stylesheet"
-      href="https://pyscript.net/releases/2024.11.1/core.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    
-    <script
-      type="module"
-      src="https://pyscript.net/releases/2024.11.1/core.js"
-    ></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    
-  </head>
-  
-  <body>
-    <div class="container">
-      <h1>&gt;_ File System Simulator</h1>
-      <p>Python file system simulator using SQLlite.</p>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>File System Simulator Terminal</title>
       
-      <div id="terminal">
-        <pre id="terminal-output"></pre>
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&gt;_</text></svg>">
+      
+      <link
+        rel="stylesheet"
+        href="https://pyscript.net/releases/2024.11.1/core.css"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      
+      <script
+        type="module"
+        src="https://pyscript.net/releases/2024.11.1/core.js"
+      ></script>
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+      
+    </head>
+    
+    <body>
+      <div class="container">
+        <h1>&gt;_ File System Simulator</h1>
+        <p>Python file system simulator using SQLite.</p>
         
-        <div id="input-line">
-          <span id="prompt">fs:/$ </span>
-          <input
-            type="text"
-            id="command-input"
-            py-keydown="handle_keypress"
-            autocomplete="off"
-            autofocus
-          />
+        <div id="terminal">
+          <pre id="terminal-output"></pre>
+          
+          <div id="input-line">
+            <span id="prompt">fs:/$ </span>
+            <input
+              type="text"
+              id="command-input"
+              py-keydown="handle_keypress"
+              autocomplete="off"
+              autofocus
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <script type="py" src="./main.py" config="./pyscript.json"></script>
-    
-    <footer>
-      <p>Created by <a href="https://github.com/dharshvin" target="_blank">Dharshan Vinoth Kumar</a></p>
-      <a href="https://github.com/dharshvin/file-system-simulator" target="_blank">
-        <p>
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-               alt="GitHub Logo"
-               style="width: 18px; vertical-align: middle; margin-right: 5px; filter: invert(1);">View on GitHub
-        </p>
-      </a>
-    </footer>
-    
-  </body>
-</html>
+      <script type="py" src="./main.py" config="./pyscript.json"></script>
+      
+      <footer>
+        <p>Created by <a href="https://github.com/dharshvin" target="_blank">Dharshan Vinoth Kumar</a></p>
+        <a href="https://github.com/dharshvin/file-system-simulator" target="_blank">
+          <p>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                alt="GitHub Logo"
+                style="width: 18px; vertical-align: middle; margin-right: 5px; filter: invert(1);">View on GitHub
+          </p>
+        </a>
+      </footer>
+      
+    </body>
+  </html>

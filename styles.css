@@ -46,27 +46,31 @@ p {
   
   padding: 15px;
   border: 1px solid #444;
-  border-radius: 6px;
+  border-radius: 0 0 8px 8px;
   
   font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
   height: 450px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
 }
 
 #terminal::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 #terminal::-webkit-scrollbar-track {
-  background: #2b2b2b;
+  background: #000000;
 }
 #terminal::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #2b2a2a;
   border-radius: 5px;
 }
 #terminal::-webkit-scrollbar-thumb:hover {
-  background: #777;
+  background: #373737;
 }
 
 #terminal-output {
